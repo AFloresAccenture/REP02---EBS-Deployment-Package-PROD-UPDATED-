@@ -1,0 +1,97 @@
+Deployment steps. 
+
+
+1.Open Unix. 
+2.Move the following packages in the /pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql using WINSCP and execute the command below in the UNIX.
+
+XXNBTY_MSCREP02_BATCH_PKG.pks
+XXNBTY_MSCREP02_BATCH_PKG.pkb
+XXNBTY_MSCREP02_BOM_BBMI_PKG.pks
+XXNBTY_MSCREP02_BOM_BBMI_PKG.pkb
+XXNBTY_MSCREP02_BOM_BICI_PKG.pks
+XXNBTY_MSCREP02_BOM_BICI_PKG.pkb
+XXNBTY_MSCREP02_BOM_COMP_PKG.pks
+XXNBTY_MSCREP02_BOM_COMP_PKG.pkb
+XXNBTY_MSCREP02_BOM_HEAD_PKG.pks
+XXNBTY_MSCREP02_BOM_HEAD_PKG.pkb
+XXNBTY_MSCREP02_CUST_INT_PKG.pks
+XXNBTY_MSCREP02_CUST_INT_PKG.pkb
+XXNBTY_MSCREP02_CUST_STG_PKG.pks
+XXNBTY_MSCREP02_CUST_STG_PKG.pkb
+XXNBTY_MSCREP02_FRMLA_MST_PKG.pks
+XXNBTY_MSCREP02_FRMLA_MST_PKG.pkb
+XXNBTY_MSCREP02_FRMLA_MTL_PKG.pks
+XXNBTY_MSCREP02_FRMLA_MTL_PKG.pkb
+XXNBTY_MSCREP02_FRMLA_UPL_PKG.pks
+XXNBTY_MSCREP02_FRMLA_UPL_PKG.pkb
+XXNBTY_EBS_SEND_EMAIL_PKG.pks
+XXNBTY_EBS_SEND_EMAIL_PKG.pkb
+
+
+sqlplus -s USERNAME/PASSWORD
+
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BATCH_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BOM_BBMI_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BOM_BICI_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BOM_COMP_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BOM_HEAD_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_CUST_INT_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_CUST_STG_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_FRMLA_MST_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_FRMLA_MTL_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_FRMLA_UPL_PKG.pks
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_EBS_SEND_EMAIL_PKG.pks
+
+
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BATCH_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BOM_BBMI_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BOM_BICI_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BOM_COMP_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_BOM_HEAD_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_CUST_INT_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_CUST_STG_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_FRMLA_MST_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_FRMLA_MTL_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_MSCREP02_FRMLA_UPL_PKG.pkb
+@/pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_EBS_SEND_EMAIL_PKG.pkb
+
+
+
+3.Move the following LDT's below to /pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/import using WINSCP and execute the command below in the UNIX.
+
+XXNBTY_REP02_CP_a.ldt
+XXNBTY_REP02_CP_b.ldt
+XXNBTY_REP02_CP_c.ldt
+XXNBTY_REP02_CP_d.ldt
+XXNBTY_REP02_CP_e.ldt
+XXNBTY_REP02_CP_f.ldt
+XXNBTY_REP02_CP_g.ldt
+XXNBTY_REP02_CP_h.ldt
+XXNBTY_REP02_CP_i.ldt
+XXNBTY_REP02_CP_j.ldt
+XXNBTY_EBS_SEND_EMAIL_CP.ldt
+
+
+NOTE: Please make sure to update the password.
+
+cd /pnbtyi/applmgr/1200/xxnbty/12.0.0/admin/import
+
+
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_a.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_b.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_c.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_d.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_e.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_f.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_g.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_h.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_i.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_REP02_CP_j.ldt CUSTOM_MODE=FORCE
+FNDLOAD apps/PASSWORD 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct XXNBTY_EBS_SEND_EMAIL_CP.ldt CUSTOM_MODE=FORCE
+
+
+
+4. Move the XXNBTYEBSSENDEMAIL.prog, int006.ctl, int002.ctl to /pnbtyi/applmgr/1200/xxnbty/12.0.0/bin and execute the command below. 
+
+dos2unix XXNBTYEBSSENDEMAIL.prog
+chmod 777 XXNBTYEBSSENDEMAIL.prog
